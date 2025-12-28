@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const servicesIntro = `
+At WealthGuard, we will help you assess the situation under which your investment losses were realized, and determine if the financial institution has failed to comply with regulatory requirements or expectations—which could be characterized as mis-selling. Accordingly, we will recommend the best strategy to ensure that your complaint regarding investment losses is heard and taken seriously by the financial institution, increasing the chance of getting compensation.
+`;
+
+const servicesDetails = `
+**To achieve this objective, we will:**
+
+1. **Interview and Review** — We will interview you and review all relevant documents and information to assess the merits of your complaint and the areas we should focus on.
+
+2. **Complaint Drafting** — We will assist you in drafting the initial complaint letter and any subsequent correspondence with the financial institution until the parties reach a resolution.
+
+3. **Regulatory Escalation** — We will assist in raising the complaint in writing to the appropriate complaint resolution bodies or regulator, where required.
+`;
+
+const legalReferral = `
+If you remain dissatisfied with the conclusion or resolution and would like to take legal action against the financial institution, we could refer you to an experienced and trusted legal firm. In such a situation, to help the legal firm (which we referred or as appointed by you) understand your complaint, we will share with them all relevant documents and information, including our review work and conclusion. This will help you reduce the legal fee and allow prompt action to be taken by the legal firm on your behalf.
+`;
+
+const whyChoose = `
+**1. Professional Opinion**
+If you feel that the financial institution may not have acted in your best interests or fulfilled its obligations toward you, and you want a professional opinion before deciding the next step, we are here to advise and support you.
+
+**2. Competitive Fees**
+Our fees are lower than the average of junior partners of legal firms across Singapore and Hong Kong, while you get the same level of service or advice—if not more.
+
+**3. Benefits of Our Approach**
+There are advantages to using us to seek a mutually satisfactory resolution with your financial institution rather than through legal means:
+
+- **Financial institutions are more receptive** — They are usually more willing to listen and reach a mutually satisfactory resolution if lawyers are not involved.
+- **Lower costs** — The absolute cost of resolution is much less than engaging a legal firm.
+- **Less stress** — Taking legal action is a big step and can be very stressful for you, so it should be a last resort.
+- **Seamless transition to legal action** — If legal action is deemed necessary, our work can help you reduce your legal fees, as most of the groundwork would already have been performed by us and shared with the legal firm.
+`;
+
+const experience = `
+The principal consultant is a veteran in the **Wealth Management Compliance** space with over **30 years of working experience** across various financial institutions.
+
+Throughout his career, he has managed numerous client complaints (including those that were escalated to regulators, resolution bodies, courts, etc.), ensuring the resolution was fair, considering the facts of each case.
+
+He possesses a detailed understanding of **Singapore and Hong Kong regulations** and regulatory expectations, especially in delivering a fair outcome to clients in the sale of investment products.
+`;
+
+const fees = `
+| Fee Type | Details |
+|----------|---------|
+| **Initial Consultation** | Free of charge |
+| **Subsequent Consultation** | Please refer to the agreement |
+| **Performance-Based Fee** | Please refer to the agreement |
+`;
+
+const contact = `
+Ready to discuss your situation? Reach out to us for a **free consultation**.
+
+- **Email:** [WealthGuard_Investment_Recovery@outlook.com](mailto:WealthGuard_Investment_Recovery@outlook.com)
+- **WhatsApp / WeChat:** +65 8977 8725
+
+*We will reply to you as soon as possible.*
+`;
+---
+
+<Layout title="About Our Services - WealthGuard">
+    <h1 class="mb-10">About Our Services</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Investment Recovery & Mis-Selling Complaint Specialists</p>
+
+    <section class="mb-16">
+        <h2 class="mb-6">Our Services</h2>
+        <Markdown content={servicesIntro} class="mb-6" />
+        <Markdown content={servicesDetails} class="mb-8" />
+
+        <div class="bg-gray-900/50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold mb-4 text-primary">Need Legal Action?</h3>
+            <Markdown content={legalReferral} />
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h2 class="mb-6">Why Should I Engage WealthGuard?</h2>
+        <Markdown content={whyChoose} />
+    </section>
+
+    <section class="mb-16">
+        <h2 class="mb-6">Experience</h2>
+        <Markdown content={experience} />
+    </section>
+
+    <section class="mb-16">
+        <h2 class="mb-6">Fees</h2>
+        <Markdown content={fees} />
+    </section>
+
+    <section class="mb-16 bg-gray-900/50 rounded-lg p-8">
+        <h2 class="mb-6">Contact Us</h2>
+        <Markdown content={contact} />
+    </section>
+
+    <p class="text-center">
+        <a href="mailto:WealthGuard_Investment_Recovery@outlook.com" class="btn btn-lg sm:min-w-64">
+            Get a Free Consultation
+        </a>
+    </p>
+</Layout>

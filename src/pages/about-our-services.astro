@@ -19,14 +19,6 @@ const servicesDetails = `
 const legalReferral = `
 If you remain dissatisfied with the conclusion or resolution and would like to take legal action against the financial institution, we could refer you to an experienced and trusted legal firm. In such a situation, to help the legal firm (which we referred or as appointed by you) understand your complaint, we will share with them all relevant documents and information, including our review work and conclusion. This will help you reduce the legal fee and allow prompt action to be taken by the legal firm on your behalf.
 `;
-
-const fees = `
-| Fee Type | Details |
-|----------|---------|
-| **Initial Consultation** | Free of charge |
-| **Subsequent Consultation** | Please refer to the agreement |
-| **Performance-Based Fee** | Please refer to the agreement |
-`;
 ---
 
 <Layout title="About Our Services - WealthGuard">
@@ -42,10 +34,5 @@ const fees = `
             <h3 class="text-lg font-semibold mb-4 text-primary">Need Legal Action?</h3>
             <Markdown content={legalReferral} />
         </div>
-    </section>
-
-    <section class="mb-16">
-        <h2 class="mb-6">Fees</h2>
-        <Markdown content={fees} />
     </section>
 </Layout>

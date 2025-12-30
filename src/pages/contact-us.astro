@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const contact = `
+Ready to discuss your situation? Reach out to us for a **free consultation**.
+
+- **Email:** [WealthGuard_Investment_Recovery@outlook.com](mailto:WealthGuard_Investment_Recovery@outlook.com)
+- **WhatsApp / WeChat:** +65 8977 8725
+
+*We will reply to you as soon as possible.*
+`;
+---
+
+<Layout title="Contact Us - WealthGuard">
+    <h1 class="mb-10">Contact Us</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Get in Touch With WealthGuard</p>
+
+    <section class="mb-16 bg-gray-900/50 rounded-lg p-8">
+        <Markdown content={contact} />
+    </section>
+
+    <p class="text-center">
+        <a href="mailto:WealthGuard_Investment_Recovery@outlook.com" class="btn btn-lg sm:min-w-64">
+            Get a Free Consultation
+        </a>
+    </p>
+</Layout>

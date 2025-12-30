@@ -2,18 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Markdown from '../components/Markdown.astro';
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+const intro = `
+Having experienced two financial crisis and witnessed severe hardship that investment losses through financial products may have on peoples' life, i.e. mental/emotional stress, family disputes, etc., we would like to accompany you in this difficult journey, specifically to ensure that your voices/concerns on potential mis-selling are heard by senior management of the financial institution or the authorities, thereby increasing your chances of getting compensation for your investment losses and a closure to such unpleasant experience.
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
+Given our professional work experience, we are well-positioned to assist clients who are customers of wealth management or private banks operating in **Singapore** and **Hong Kong**.
 `;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
+<Layout title="WealthGuard - Investment Recovery Specialists">
+    <h1 class="mb-10">WealthGuard</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Investment Recovery & Mis-Selling Complaint Specialists</p>
+    <Markdown content={intro} class="mb-10 text-lg" />
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <a href="/about-our-services" class="btn btn-lg sm:min-w-64">Learn More About Our Services</a>
     </p>
 </Layout>

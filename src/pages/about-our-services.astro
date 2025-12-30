@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const servicesIntro = `
+At WealthGuard, we will help you assess the situation under which your investment losses were realized, and determine if the financial institution has failed to comply with regulatory requirements or expectations—which could be characterized as mis-selling. Accordingly, we will recommend the best strategy to ensure that your complaint regarding investment losses is heard and taken seriously by the financial institution, increasing the chance of getting compensation.
+`;
+
+const servicesDetails = `
+**To achieve this objective, we will:**
+
+1. **Interview and Review** — We will interview you and review all relevant documents and information to assess the merits of your complaint and the areas we should focus on.
+
+2. **Complaint Drafting** — We will assist you in drafting the initial complaint letter and any subsequent correspondence with the financial institution until the parties reach a resolution.
+
+3. **Regulatory Escalation** — We will assist in raising the complaint in writing to the appropriate complaint resolution bodies or regulator, where required.
+`;
+
+const legalReferral = `
+If you remain dissatisfied with the conclusion or resolution and would like to take legal action against the financial institution, we could refer you to an experienced and trusted legal firm. In such a situation, to help the legal firm (which we referred or as appointed by you) understand your complaint, we will share with them all relevant documents and information, including our review work and conclusion. This will help you reduce the legal fee and allow prompt action to be taken by the legal firm on your behalf.
+`;
+---
+
+<Layout title="About Our Services - WealthGuard">
+    <h1 class="mb-10">About Our Services</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Investment Recovery & Mis-Selling Complaint Specialists</p>
+
+    <section class="mb-16">
+        <h2 class="mb-6">Our Services</h2>
+        <Markdown content={servicesIntro} class="mb-6" />
+        <Markdown content={servicesDetails} class="mb-8" />
+
+        <div class="bg-gray-900/50 rounded-lg p-6">
+            <h3 class="text-lg font-semibold mb-4 text-primary">Need Legal Action?</h3>
+            <Markdown content={legalReferral} />
+        </div>
+    </section>
+</Layout>

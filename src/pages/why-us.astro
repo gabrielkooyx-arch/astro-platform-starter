@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const whyChoose = `
+**1. Professional Opinion**
+If you feel that the financial institution may not have acted in your best interests or fulfilled its obligations toward you, and you want a professional opinion before deciding the next step, we are here to advise and support you.
+
+**2. Competitive Fees**
+Our fees are lower than the average of junior partners of legal firms across Singapore and Hong Kong, while you get the same level of service or advice—if not more.
+
+**3. Benefits of Our Approach**
+There are advantages to using us to seek a mutually satisfactory resolution with your financial institution rather than through legal means:
+
+- **Financial institutions are more receptive** — They are usually more willing to listen and reach a mutually satisfactory resolution if lawyers are not involved.
+- **Lower costs** — The absolute cost of resolution is much less than engaging a legal firm.
+- **Less stress** — Taking legal action is a big step and can be very stressful for you, so it should be a last resort.
+- **Seamless transition to legal action** — If legal action is deemed necessary, our work can help you reduce your legal fees, as most of the groundwork would already have been performed by us and shared with the legal firm.
+`;
+---
+
+<Layout title="Why Us? - WealthGuard">
+    <h1 class="mb-10">Why Us?</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Why Should I Engage WealthGuard?</p>
+
+    <section class="mb-16">
+        <Markdown content={whyChoose} />
+    </section>
+</Layout>

@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const experience = `
+The principal consultant is a veteran in the **Wealth Management Compliance** space with over **30 years of working experience** across various financial institutions.
+
+Throughout his career, he has managed numerous client complaints (including those that were escalated to regulators, resolution bodies, courts, etc.), ensuring the resolution was fair, considering the facts of each case.
+
+He possesses a detailed understanding of **Singapore and Hong Kong regulations** and regulatory expectations, especially in delivering a fair outcome to clients in the sale of investment products.
+`;
+---
+
+<Layout title="Our Experts - WealthGuard">
+    <h1 class="mb-10">Our Experts</h1>
+    <p class="text-xl text-primary font-semibold mb-8">Meet the WealthGuard Team</p>
+
+    <section class="mb-16">
+        <Markdown content={experience} />
+    </section>
+</Layout>

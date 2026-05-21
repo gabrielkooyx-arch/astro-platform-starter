@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const faqItems = [
+    {
+        question: '1. What exactly is "Investment Mis-Selling"?',
+        answer: `Mis-selling occurs when a financial product is sold to you in a way that is misleading, ignores your investment objective/risk tolerance, or fails to disclose key information, etc. This includes:
+
+- Being recommended a high-risk product that does not suit your profile or personal circumstances.
+- Being pressured into an investment you didn't fully understand.`
+    },
+    {
+        question: '2. Does a loss in the market automatically mean I was mis-sold?',
+        answer: `Not necessarily. All investments carry some level of market risk. However, if the process by which that investment was sold to you violated regulatory standards, such as failing to perform a suitability test, you may have a valid claim for recovery regardless of how the market performed.`
+    },
+    {
+        question: '3. How do I know if I have a case?',
+        answer: `The easiest way is to let us take a look. We review your original investment goals, the brochures and documents provided at the time of sale, and the subsequent performance. If there is a gap between what you were promised and what the regulations require, we will find it.`
+    },
+    {
+        question: '4. How long does the recovery process usually take?',
+        answer: `Every case is unique. Some financial institutions resolve complaints within a month of receiving our formal letter, while complex cases can take longer. Our goal is always to achieve the fastest resolution possible without compromising the quality of your claim.`
+    },
+    {
+        question: '5. What documents should I have ready?',
+        answer: `To provide the most accurate assessment, it helps to have:
+
+- The account opening agreement.
+- The investor profile assessment form.
+- The original investment agreement or contract.
+- Order taking correspondences between you and the relationship manager or investment counsellor.
+- Records of correspondence (emails/letters) with the institution.
+- Portfolio statements.
+
+Don't worry if you're missing something; we can help you request copies.`
+    },
+    {
+        question: '6. Are you a law firm?',
+        answer: `WealthGuard is a specialist consultancy focused on Investment Recovery and Regulatory Compliance. We handle the technical assessment and administrative complaint process. If your case requires formal litigation, we refer you to our network of trusted legal partners, providing them with a "ready-to-go" evidence file to save you time and legal fees.`
+    },
+    {
+        question: '7. What if the financial institution rejects my claim?',
+        answer: `Rejection is a common tactic used by institutions to see if a complainant will give up. If your claim has merit, we don't stop there. We assist you in escalating the matter to the relevant complaint resolution bodies or regulator to ensure an independent review of your case.`
+    }
+];
+---
+
+<Layout title="Frequently Asked Questions - WealthGuard">
+    <h1 class="mb-10">Frequently Asked Questions (FAQs)</h1>
+
+    <section class="mb-16">
+        <div class="space-y-8">
+            {faqItems.map((item) => (
+                <div class="faq-item">
+                    <h2 class="text-xl font-semibold mb-4 text-primary">{item.question}</h2>
+                    <Markdown content={item.answer} />
+                </div>
+            ))}
+        </div>
+    </section>
+
+    <p class="text-center mt-12">
+        <a href="/contact-us" class="btn btn-lg sm:min-w-64">Get in Touch</a>
+    </p>
+</Layout>
